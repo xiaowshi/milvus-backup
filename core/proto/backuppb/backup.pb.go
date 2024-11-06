@@ -1129,7 +1129,7 @@ type BackupInfoResponse struct {
 	// uuid of the request to response
 	RequestId string `protobuf:"bytes,1,opt,name=requestId,proto3" json:"requestId,omitempty"`
 	// response code. 0 means success. others are fail
-	Code ResponseCode `protobuf:"varint,2,opt,name=code,proto3,enum=milvus.proto.backup.ResponseCode" json:"code,omitempty"`
+	Code ResponseCode `protobuf:"varint,2,opt,name=code,proto3,enum=milvus.proto.backup.ResponseCode" json:"code"`
 	// error msg if fail
 	Msg string `protobuf:"bytes,3,opt,name=msg,proto3" json:"msg,omitempty"`
 	// backup info entity
